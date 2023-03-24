@@ -5,9 +5,7 @@ import {
   ListItemButton,
   ListItemIcon,
   Box,
-  Typography,
 } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
@@ -18,7 +16,6 @@ const SideBar = () => {
     <Box
       sx={{
         background: "#1A2036",
-        // position: "absolute",
         width: "88px",
         borderRadius: "20px",
         display: "flex",
