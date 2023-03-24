@@ -1,5 +1,5 @@
-import { Avatar, Typography, Box, Card } from "@mui/material";
 import React from "react";
+import { Avatar, Typography, Box, Card } from "@mui/material";
 import styled from "@emotion/styled";
 
 const StyledCard = styled((props) => <Card {...props} />)(({ theme }) => ({
