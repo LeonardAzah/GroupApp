@@ -15,9 +15,9 @@ const Modal = (props) => {
         background: "rgba(37, 43, 66, 0.84)",
         borderRadius: "25px",
         position: "absolute",
-        width: "70%",
+        width: "865px",
         top: 60,
-        left: 180,
+        left: 330,
         right: 800,
         padding: "1rem",
         zIndex: 999,
@@ -27,8 +27,8 @@ const Modal = (props) => {
         <Avatar
           sx={{
             bgcolor: "#040404",
-            width: "50px",
-            height: "45px",
+            width: "56px",
+            height: "56px",
             color: "#808FBE",
           }}
           component={Button}
@@ -44,7 +44,6 @@ const Modal = (props) => {
             fontStyle: "normal",
             fontWeight: 700,
             fontSize: "30px",
-
             color: "#FFFFFF",
           }}
         >
@@ -56,10 +55,15 @@ const Modal = (props) => {
         <TextField placeholder="Total Members" fullWidth />
       </Box>
       <Box>
-        <Box sx={{ display: "flex", marginRight: "25px" }}>
+        <Box
+          sx={{
+            display: "flex",
+          }}
+        >
           <Box
             sx={{
-              width: "300px",
+              width: "448px",
+              height: "190px",
               background: "rgba(0, 0, 0, 0.9)",
               border: "2px solid #FFFFFF",
               borderRadius: "10px",
@@ -67,13 +71,14 @@ const Modal = (props) => {
               justifyContent: "center",
               alignItems: "center",
               marginRight: "20px",
+              cursor: "pointer",
             }}
           >
-            <Box sx={{ paddingTop: "1.5rem", textAlign: "center" }}>
+            <Box sx={{ textAlign: "center" }}>
               <CloudUploadIcon
                 sx={{
                   width: "96px",
-                  height: "64px",
+                  height: "96px",
                   color: "#FFFFFF",
                   alignItems: "center",
                 }}
@@ -81,8 +86,11 @@ const Modal = (props) => {
               <Typography
                 sx={{
                   color: "#FFFFFF",
-                  paddingY: "0.5rem",
                   alignItems: "center",
+                  fontFamily: "Merriweather",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  fontSize: "18px",
                 }}
               >
                 Upload Group Image
@@ -90,7 +98,10 @@ const Modal = (props) => {
             </Box>
           </Box>
           <Box>
-            <Avatar sx={{ width: "190px", height: "190px" }} src={workout} />
+            <Avatar
+              sx={{ width: "190px", height: "190px", cursor: "pointer" }}
+              src={workout}
+            />
           </Box>
         </Box>
       </Box>

@@ -6,8 +6,12 @@ const StyledButton = styled(Button)(({ theme }) => ({
   textTransform: "none",
   boxShadow: "none",
   height: 40,
-  fontSize: "1.2rem",
-  paddingX: "2rem",
+  fontFamily: "Merriweather",
+  fontStyle: "normal",
+  fontWeight: 700,
+  fontSize: "20px",
+  width: "127px",
+  height: "58px",
 }));
 
 const PlainButton = ({ ...props }) => {

@@ -11,6 +11,7 @@ const StyledCard = styled((props) => <Card {...props} />)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  cursor: "pointer",
 }));
 
 const titleStyle = {

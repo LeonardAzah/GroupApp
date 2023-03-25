@@ -9,6 +9,10 @@ const StyledCard = styled((props) => <Card {...props} />)(({ theme }) => ({
   boxShadow: " 0px 10px 25px -15px #111628",
   width: "173px",
   height: "208px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  cursor: "pointer",
 }));
 
 const titleStyle = {
@@ -17,36 +21,35 @@ const titleStyle = {
   fontWeight: 500,
   fontSize: "14px",
   color: "#8795C5",
+  boxShadow: " 0px 10px 25px -15px #111628",
   paddingTop: "0.5rem",
 };
 
 const AddCard = (props) => {
   const { onClick } = props;
   return (
-    <StyledCard elevation={2} component={Button} onClick={onClick}>
+    <StyledCard elevation={2}>
       <Box>
-        <Box
+        <Avatar
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
+            background: "#242B42",
+            width: "56px",
+            height: "56px",
           }}
+          component={Button}
+          onClick={onClick}
         >
-          <Avatar
+          <AddOutlinedIcon
             sx={{
-              background: "#242B42",
-              width: "56px",
-              height: "56px",
+              color: "#808FBE",
+              fontSize: "2.2rem",
             }}
-          >
-            <AddOutlinedIcon color="#808FBE" />
-          </Avatar>
+          />
+        </Avatar>
 
-          <Typography variant="body1" sx={titleStyle}>
-            Create Group
-          </Typography>
-        </Box>
+        <Typography variant="body1" sx={titleStyle}>
+          Create Group
+        </Typography>
       </Box>
     </StyledCard>
   );

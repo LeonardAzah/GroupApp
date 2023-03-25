@@ -7,7 +7,7 @@ function App() {
     <Box
       sx={{
         background: "#252B42",
-        width: "80%",
+        width: "865px",
         display: "flex",
         padding: "2rem",
         margin: "auto",

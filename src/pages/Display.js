@@ -25,62 +25,85 @@ const Display = () => {
   };
 
   return (
-    <Grid container spacing={1}>
+    <Grid
+      container
+      spacing={2}
+      sx={{
+        padding: "2px",
+      }}
+    >
       <Grid
         item
         xs={12}
-        sx={{ display: "flex", justifyContent: "space-between" }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            textAlign: "center",
-          }}
-        >
+        <Box sx={{ display: "flex" }}>
           <Typography
-            sx={{ display: "flex", fontWeight: 700, fontSize: "26px" }}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontWeight: 700,
+              fontSize: "26px",
+              fontFamily: "Merriweather",
+              fontStyle: "normal",
+              fontSize: "26px",
+              color: "#B1B9D8",
+              cursor: "pointer",
+            }}
           >
-            <ArrowBackOutlinedIcon sx={{ color: "#7f88a9" }} /> Groups
+            <ArrowBackOutlinedIcon
+              sx={{
+                color: "#7f88a9",
+                fontSize: "30px",
+                marginRight: "5px",
+              }}
+            />{" "}
+            Groups
           </Typography>
         </Box>
         <Box
           sx={{
             display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             border: "2px solid #1A2036",
             borderRadius: "5px",
           }}
         >
-          <Box sx={{ background: colors.background, padding: "0.2rem" }}>
+          <Box sx={{ background: colors.background, padding: "0.25rem" }}>
             <GridViewOutlinedIcon sx={{ color: "#7f88a9" }} />
           </Box>
-          <Box sx={{ padding: "0.2rem" }}>
+          <Box sx={{ padding: "0.25rem" }}>
             <SplitscreenOutlinedIcon sx={{ color: "#7f88a9" }} />
           </Box>
         </Box>
       </Grid>{" "}
-      <Grid item xs={12} sm={4} md={3}>
+      <Grid item xs={12} sm={3} md={3} style={{ maxWidth: "fit-content" }}>
         <AddCard onClick={handleShowModal} />
         <Box>
           {showModal && <Modal show={showModal} onClose={handleCloseModal} />}
         </Box>
       </Grid>
-      <Grid item xs={12} sm={4} md={3}>
+      <Grid item xs={12} sm={4} md={3} style={{ maxWidth: "fit-content" }}>
         <PlainCard title="Cusine" number="36 members" img={cusine} />
       </Grid>
-      <Grid item xs={12} sm={4} md={3}>
-        <PlainCard title="Art" number="9 members" img={arts} />{" "}
+      <Grid item xs={12} sm={4} md={3} style={{ maxWidth: "fit-content" }}>
+        <PlainCard title="Art" number="9 members" img={arts} />
       </Grid>
-      <Grid item xs={12} sm={4} md={3}>
+      <Grid item xs={12} sm={4} md={3} style={{ maxWidth: "fit-content" }}>
         <PlainCard title="Workout" number="27 members" img={workout} />
       </Grid>
-      <Grid item xs={12} sm={4} md={3}>
+      <Grid item xs={12} sm={4} md={3} style={{ maxWidth: "fit-content" }}>
         <PlainCard title="Gaming" number="105 members" img={game} />
       </Grid>
-      <Grid item xs={12} sm={4} md={3}>
+      <Grid item xs={12} sm={4} md={3} style={{ maxWidth: "fit-content" }}>
         <PlainCard title="Hiking" number="97 members" img={hiking} />
       </Grid>
-      <Grid item xs={12} sm={4} md={3}>
+      <Grid item xs={12} sm={4} md={3} style={{ maxWidth: "fit-content" }}>
         <PlainCard title="Yoga" number="65 members" img={yoga} />
       </Grid>
     </Grid>

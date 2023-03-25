@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   List,
   ListItem,
@@ -6,12 +6,20 @@ import {
   ListItemIcon,
   Box,
 } from "@mui/material";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import EggOutlinedIcon from "@mui/icons-material/EggOutlined";
 
 const SideBar = () => {
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    setActive({ background: "#242B42", borderRadius: "10px" });
+  };
+  // const styleBack = {
+  //   background: "#242B42",
+  //   borderRadius: "10px",
+  // };
   return (
     <Box
       sx={{
@@ -26,7 +34,7 @@ const SideBar = () => {
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <MessageOutlinedIcon sx={{ color: "#7f88a9" }} />
+              <ChatOutlinedIcon sx={{ color: "#7f88a9" }} />
             </ListItemIcon>
           </ListItemButton>
         </ListItem>
@@ -40,7 +48,7 @@ const SideBar = () => {
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
-              <AcUnitIcon sx={{ color: "#7f88a9" }} />
+              <EggOutlinedIcon sx={{ color: "#7f88a9" }} />
             </ListItemIcon>
           </ListItemButton>
         </ListItem>

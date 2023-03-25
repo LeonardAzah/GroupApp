@@ -11,14 +11,15 @@ const TextField = (props) => {
           borderRadius: "10px",
           boxSizing: "border-box",
           marginY: "0.5rem",
-          fontFamily: "Merriweather",
-          fontStyle: "normal",
-          fontWeight: 700,
-          fontSize: "18px",
           textAlign: "center",
           width: "100%",
-
-          color: "#111628",
+          "&.MuiInputBase-input": {
+            fontFamily: "Merriweather",
+            fontStyle: "normal",
+            fontWeight: 700,
+            fontSize: "18px",
+            color: "#111628",
+          },
         }}
       >
         <OutlinedInput placeholder={placeholder} />
