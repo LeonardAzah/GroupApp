@@ -5,7 +5,6 @@ const StyledButton = styled(Button)(({ theme }) => ({
   borderRadius: 10,
   textTransform: "none",
   boxShadow: "none",
-  height: 40,
   fontFamily: "Merriweather",
   fontStyle: "normal",
   fontWeight: 700,

@@ -50,7 +50,6 @@ const Display = () => {
               fontSize: "26px",
               fontFamily: "Merriweather",
               fontStyle: "normal",
-              fontSize: "26px",
               color: "#B1B9D8",
               cursor: "pointer",
             }}

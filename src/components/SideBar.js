@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   List,
   ListItem,
@@ -12,14 +12,6 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import EggOutlinedIcon from "@mui/icons-material/EggOutlined";
 
 const SideBar = () => {
-  const [active, setActive] = useState(false);
-  const handleClick = () => {
-    setActive({ background: "#242B42", borderRadius: "10px" });
-  };
-  // const styleBack = {
-  //   background: "#242B42",
-  //   borderRadius: "10px",
-  // };
   return (
     <Box
       sx={{
