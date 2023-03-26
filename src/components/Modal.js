@@ -15,9 +15,10 @@ const Modal = (props) => {
         background: "rgba(37, 43, 66, 0.84)",
         borderRadius: "25px",
         position: "absolute",
-        width: "865px",
+        // width: "865px",
+        width: "70%",
         top: 60,
-        left: 330,
+        left: 220,
         right: 800,
         padding: "1rem",
         zIndex: 999,
@@ -58,6 +59,7 @@ const Modal = (props) => {
         <Box
           sx={{
             display: "flex",
+            paddingTop: "0.5rem",
           }}
         >
           <Box

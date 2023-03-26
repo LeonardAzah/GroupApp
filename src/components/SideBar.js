@@ -11,17 +11,10 @@ import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import EggOutlinedIcon from "@mui/icons-material/EggOutlined";
 
-const SideBar = () => {
+const SideBar = (props) => {
+  const { sx } = props;
   return (
-    <Box
-      sx={{
-        background: "#1A2036",
-        width: "88px",
-        borderRadius: "20px",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
+    <Box sx={sx}>
       <List>
         <ListItem>
           <ListItemButton>
