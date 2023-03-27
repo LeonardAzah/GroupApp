@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Box, Stack, Drawer } from "@mui/material";
 import SideBar from "./components/SideBar";
 import Display from "./pages/Display";
-import { colors } from "./util";
 
 const drawerWidth = "95px";
 
